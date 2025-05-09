@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elijah | 3D Animation & Web Design</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+    <!-- Floating 3D Shapes Background -->
+    <div class="fixed -z-10 w-full h-full overflow-hidden opacity-20">
+        <div class="absolute top-1/4 left-1/4 w-32 h-32 rounded-full bg-gradient-to-br from-purple-500 to-blue-500 opacity-70 floating" style="animation-delay: 0s;"></div>
+        <div class="absolute top-1/3 right-1/4 w-40 h-40 rounded-lg bg-gradient-to-br from-pink-500 to-cyan-500 opacity-70 floating" style="animation-delay: 1s;"></div>
+        <div class="absolute bottom-1/4 left-1/3 w-24 h-24 rounded-full bg-gradient-to-br from-blue-500 to-green-500 opacity-70 floating" style="animation-delay: 2s;"></div>
+        <div class="absolute bottom-1/3 right-1/3 w-36 h-36 rounded-lg bg-gradient-to-br from-cyan-500 to-purple-500 opacity-70 floating" style="animation-delay: 3s;"></div>
+    </div>
+
+<!-- Navigation -->
+<nav class="fixed w-full z-50 bg-black bg-opacity-80 backdrop-blur-sm">
+    <div class="max-w-7xl mx-auto px-6 py-4">
+        <div class="flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold gradient-text hover:text-neon transition">Elijah</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#work" class="hover:text-neon transition">Work</a>
+                <a href="#about" class="hover:text-neon transition">About</a>
+                <a href="#skills" class="hover:text-neon transition">Skills</a>
+                <a href="#contact" class="px-4 py-2 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-md hover:opacity-90 transition">Contact</a>
+            </div>
+            <button class="md:hidden text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="min-h-screen flex items-center justify-center px-6 pt-24 pb-16">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div class="text-center md:text-left">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6">
+                <span class="glitch" data-text="3D ANIMATOR">3D ANIMATOR</span>
+                <br>
+                <span class="gradient-text">& WEB DESIGNER</span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 opacity-90">
+                <span class="typing">High school student creating immersive brand experiences</span>
+            </p>
+            <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                <a href="works.html" class="px-8 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-md text-lg font-medium hover:opacity-90 transition">View Work</a>
+                <a href="#contact" class="px-8 py-3 border-2 border-neon text-neon rounded-md text-lg font-medium hover:bg-neon hover:bg-opacity-10 transition">Hire Me</a>
+            </div>
+        </div>
+        <div class="relative">
+            <div class="rotate-3d">
+                <img src="https://images.unsplash.com/photo-1639762681057-408e52192e55?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2232&q=80" 
+                     alt="3D Animation Example" 
+                     class="w-full h-auto rounded-xl neon-border">
+            </div>
+            <div class="absolute -bottom-6 -right-6 bg-black px-4 py-2 rounded-md neon-border">
+                <span href="works.html" class="text-neon font-mono">Current Project →</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Work Section -->
+<section id="work" class="py-20 px-6">
+    <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                <span class="gradient-text">Selected</span> Works
+            </h2>
+            <p class="text-xl opacity-90 max-w-2xl mx-auto">
+                A showcase of my best 3D animations and web design projects
+            </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Project 1 -->
+            <div class="hover-3d bg-black bg-opacity-50 rounded-xl overflow-hidden neon-border">
+                <div class="relative overflow-hidden h-80">
+                    <img src="images/Screenshot_20250508_170648.png" 
+                         alt="Product Animation" 
+                         class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                         onclick="openVideoLightbox('')">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                    <div class="absolute bottom-0 left-0 p-6">
+                        <span class="text-xs font-mono text-neon">3D CINEMATIC ANIMATION</span>
+                        <h3 class="text-2xl font-bold mt-1">Archer In A Field</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 2 -->
+            <div class="hover-3d bg-black bg-opacity-50 rounded-xl overflow-hidden neon-border">
+                <div class="relative overflow-hidden h-80">
+                    <img src="images/Screenshot_20250508_170427.png" 
+                         alt="Logo Animation" 
+                         class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                         onclick="openVideoLightbox('videos/Luxora-commercialFINAL.mp4')">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                    <div class="absolute bottom-0 left-0 p-6">
+                        <span class="text-xs font-mono text-neon">LOGO ANIMATION</span>
+                        <h3 class="text-2xl font-bold mt-1">Luxora</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Lightbox -->
+<div id="video-lightbox" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 hidden" onclick="closeVideoLightbox()">
+    <video id="lightbox-video" controls class="max-w-4xl max-h-full rounded shadow-lg"></video>
+    <source src="videos/Luxora-commercialFINAL.mp4" type="video/mp4">
+    </video>
+  </div>
+  
+            
+            <!-- Project 3 -->
+            <div class="hover-3d bg-black bg-opacity-50 rounded-xl overflow-hidden neon-border">
+                <div class="relative overflow-hidden h-80">
+                    <img src="images/Screenshot_20250508_183946.png" 
+                         alt="Web Design" 
+                         class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                         onclick="openVideoLightbox('your-video.mp4')">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                    <div class="absolute bottom-0 left-0 p-6">
+                        <span class="text-xs font-mono text-neon">LOOPING ANIMATION</span>
+                        <h3 class="text-2xl font-bold mt-1">2 Glass Balls</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-8">
+            <p class="text-2xl md:text-3xl font-semibold text-white opacity-80">
+                More works coming soon...
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-20 px-6 bg-black bg-opacity-50">
+    <div class="max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="order-2 lg:order-1">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                    <span class="gradient-text">About</span> Me
+                </h2>
+                <p class="text-lg opacity-90 mb-6">
+                    I'm Elijah, a 17-year-old 3D animator and web designer currently balancing my creative work with high school. I discovered my passion for digital creation when I was 14 and have been honing my skills ever since.
+                </p>
+                <p class="text-lg opacity-90 mb-6">
+                    What started as a hobby creating simple animations for friends has grown into a serious craft. I specialize in bringing products and brands to life through motion and interactive experiences.
+                </p>
+                <p class="text-lg opacity-90 mb-8">
+                    When I'm not animating or coding, you can find me skateboarding, playing synth in a band, or binge-watching sci-fi movies for inspiration.
+                </p>
+            </div>
+            <div class="order-1 lg:order-2 relative">
+                <div class="floating">
+                    <img src="images/ilya-3147.jpg" 
+                         alt="Elijah" 
+                         class="w-full h-auto rounded-xl neon-border">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="py-20 px-6">
+    <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                My <span class="gradient-text">Digital</span> Toolkit
+            </h2>
+            <p class="text-xl opacity-90 max-w-2xl mx-auto">
+                The tools and technologies I use to bring ideas to life
+            </p>
+        </div>
+        
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+            <!-- Skill 1 -->
+            <div class="hover-3d bg-black bg-opacity-50 rounded-xl p-8 text-center neon-border">
+                <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center text-4xl text-cyan-400">
+                    <img width="48" height="48" src="https://img.icons8.com/color/48/blender-3d.png" alt="blender-3d"/>
+                </div>
+                <h3 class="text-xl font-bold mb-2">Blender</h3>
+                <p class="opacity-90 text-sm">3D Modeling & Animation</p>
+            </div>
+
+            <!-- Skill 3 -->
+            <div class="hover-3d bg-black bg-opacity-50 rounded-xl p-8 text-center neon-border">
+                <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center text-4xl text-yellow-400">
+                    <i class="fab fa-js"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2">JavaScript</h3>
+                <p class="opacity-90 text-sm">Web Animation</p>
+            </div>
+            
+            <!-- Skill 4 -->
+            <div class="hover-3d bg-black bg-opacity-50 rounded-xl p-8 text-center neon-border">
+                <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center text-4xl text-pink-400">
+                    <i class="fab fa-figma"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2">Figma</h3>
+                <p class="opacity-90 text-sm">UI/UX Design</p>
+            </div>
+            
+            <!-- Skill 5 -->
+            <div class="hover-3d bg-black bg-opacity-50 rounded-xl p-8 text-center neon-border">
+                <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center text-4xl text-blue-400">
+                    <i class="fas fa-cube"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2">Three.js</h3>
+                <p class="opacity-90 text-sm">3D Web</p>
+            </div>
+
+
+            
+            <!-- Skill 8 -->
+            <div class="hover-3d bg-black bg-opacity-50 rounded-xl p-8 text-center neon-border">
+                <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center text-4xl text-white">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-2">HTML/CSS</h3>
+                <p class="opacity-90 text-sm">Web Development</p>
+            </div>
+            
+            <!-- Skill 9 -->
+
+            
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-20 px-6 bg-black bg-opacity-70">
+    <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                Let's <span class="gradient-text">Work</span> Together
+            </h2>
+            <p class="text-xl opacity-90 max-w-2xl mx-auto">
+                Have a project in mind? Want to collaborate? Just say hello?
+            </p>
+        </div>
+        
+        <div class="flex justify-center">
+            <div class="flex flex-col items-center space-y-16">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4 gradient-text">Contact Info</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="text-neon text-xl mr-4 mt-1">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Email</h4>
+                                <a href="mailto:max@example.com" class="opacity-90 hover:text-neon transition">ikr@clc.cc</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-neon text-xl mr-4 mt-1">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Location</h4>
+                                <p class="opacity-90">Batumi, Georgia</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-neon text-xl mr-4 mt-1">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium">Availability</h4>
+                                <p class="opacity-90">After school & weekends</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-bold mb-4 gradient-text">Follow Me</h3>
+                    <div class="flex space-x-6">
+                        <a href="https://www.instagram.com/skyzess1/" class="w-12 h-12 rounded-full bg-black bg-opacity-50 flex items-center justify-center text-xl hover:text-neon transition border border-gray-800">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.behance.net/testtest1112" class="w-12 h-12 rounded-full bg-black bg-opacity-50 flex items-center justify-center text-xl hover:text-neon transition border border-gray-800">
+                            <i class="fab fa-behance"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@skyzess90" class="w-12 h-12 rounded-full bg-black bg-opacity-50 flex items-center justify-center text-xl hover:text-neon transition border border-gray-800">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/elijah-kruzhilin-95690328b/" class="w-12 h-12 rounded-full bg-black bg-opacity-50 flex items-center justify-center text-xl hover:text-neon transition border border-gray-800">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-12 px-6 bg-black">
+    <div class="max-w-6xl mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-6 md:mb-0">
+                <a href="#" class="text-2xl font-bold gradient-text">Elijah</a>
+                <p class="opacity-70 mt-2">3D Animation & Web Design</p>
+            </div>
+            <div class="flex space-x-6">
+                <a href="#work" class="hover:text-neon transition">Work</a>
+                <a href="#about" class="hover:text-neon transition">About</a>
+                <a href="#skills" class="hover:text-neon transition">Skills</a>
+                <a href="#contact" class="hover:text-neon transition">Contact</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+    
+
+</body>
+</html>
